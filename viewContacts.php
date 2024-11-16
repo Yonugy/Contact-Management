@@ -71,6 +71,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             echo '<p>Date of Birth:<br>' . $row['contact_dob'] . '</p>';
             echo '<form method="POST" action="">';
             echo '<button type="submit" name="deleteBtn" value="'. $row['id'] .'">Delete</button>';
+            echo '<button type="button"  onclick="window.location.href=\'edit.php?id='.$row['id'] .'\'">Edit</button>';
             echo '</form>';
             echo '</div>';
         }
